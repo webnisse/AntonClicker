@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clicker {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  display: block;
+}
+
+.clicker img {
+  width: 100%;
+  height: 100%;
+}
+
+.clicker:active {
+  transform: scale(1.05);
+}
+
+main {
+  flex: 1;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  width: 300px;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.counter {
+  display: block;
+  padding: 50px 0;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+aside button {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.buttons button {
+  background-color: #7f595a;
+  margin-top: 20px;
+}
+
+.market button {
+  background-color: #597f7a;
+  margin-bottom: 20px;
+}
+
+aside button:active {
+  transform: scale(0.95);
+}
+
+aside .title {
+  font-size: 30px;
+  font-family: 'khula';
+  color: #575757;
+}
+
+.unavailable {
+  color: #ffffff80;
+  pointer-events: none;
+}
+
+.unavailable:active {
+  transform: unset;
+}
